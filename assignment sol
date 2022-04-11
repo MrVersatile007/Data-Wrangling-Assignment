@@ -26,7 +26,7 @@ c
 #4 SOLUTION
 import numpy as np
 given_data = np.array([1,2,0,0,4,0])
-d = np.where(given_data == 0)
+d = np.where(given_data != 0)
 d
 
 #5 SOLUTION
