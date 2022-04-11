@@ -1,0 +1,40 @@
+1. Create a null vector of size 10 but the fifth value which is 1.
+2. Create a vector with values ranging from 10 to 49.
+3. Create a 3x3 matrix with values ranging from 0 to 8
+4. Find indices of non-zero elements from [1,2,0,0,4,0]
+5. Create a 10x10 array with random values and find the minimum and maximum values.
+6. Create a random vector of size 30 and find the mean value.
+
+###########################CODE STARTS HERE !
+
+#1 SOLUTION
+import numpy as np
+a = np.array([0, 0, 0, 0, 1, 0, 0, 0, 0, 0])
+a
+
+#2 SOLUTION
+import numpy as np
+b = np.arange(10,50)
+b
+
+#3 SOLUTION
+import numpy as np
+c = np.arange(0,9)
+c.reshape(3,3)
+c
+
+#4 SOLUTION
+import numpy as np
+given_data = np.array([1,2,0,0,4,0])
+d = np.where(given_data == 0)
+d
+
+#5 SOLUTION
+import numpy as np
+d = np.random.uniform(size = (10,10))
+print(d.min(), d.max())
+
+#6 SOLUTION
+import numpy as np
+e = np.random.uniform(-100, 100, size = (30))
+e.mean()
